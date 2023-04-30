@@ -1,0 +1,104 @@
+##solution for problem number1:
+code:
+p=1
+s=1
+q=1
+print("Here are the list of books.")
+print("TYPE1:Introduction to python programming")
+print("TYPE2: Python libraries cookbook")
+print("TYPE3:Data Science in python")
+print("Enter  how many types of books you want")
+a=int(input())
+if a==1:
+    print("Enter which type of book you want.")
+    x=int(input())
+    print("Enter how many books you need")
+    y=int(input())
+    if x==1:
+        s=y*499
+    if x==2:
+        p=y*855
+    if x==3:
+        q=y*645
+    
+    sum =s+p+q-2
+elif a==2:
+    print("select one kind of book first")
+    x1=int(input())
+    print("Enter how many one kind books you need")
+    y=int(input())
+    if x1==1:
+        s=y*499
+    if x1==2:
+        p=y*855
+    if x1==3:
+        q=y*645
+    sum1=s+p+q-2
+    print("select second kind of book")
+    y1=int(input())
+    print("Enter how many second kind of books you need")
+    k=int(input())
+    if y1==1:
+        s=k*499
+    if y1==2:
+        p=k*855
+    if y1==3:
+        q=k*645
+    sum2=s+p+q-2
+    sum = sum1+sum2
+else:
+    print("select one kind of book first")
+    x1=int(input())
+    print("Enter how many books you need")
+    y=int(input())
+    if x1==1:
+        s=y*499
+    if x1==2:
+        p=y*855
+    if x1==3:
+        q=y*645
+    sum1=s+p+q-2
+    print("select second kind of book")
+    y1=int(input())
+    print("Enter how many books you need")
+    k=int(input())
+    if y1==1:
+        s=k*499
+    if y1==2:
+        p=k*855
+    if y1 ==3:
+        q=k*645
+    sum2=s+p+q-2
+    print("select third kind of book")
+    z1=int(input())
+    print("Enter how many books you need")
+    m=int(input())
+    if z1==1:
+        s=m*499
+    if z1==2:
+        p=m*855
+    if z1==3:
+        q=m*645
+    sum3=s+p+q-2
+    sum=sum1+sum2+sum3
+        
+gst=(12/100)*sum
+d_charge=gst+250+sum
+print("Total sum of books is ",sum)
+print("Total GST is",gst)
+print("Total invoice is ",d_charge)
+
+
+
+##solution for problem number 2:
+code:
+a=input("string1= ")
+l=[]
+i=0
+x=len(a)
+while(x):
+    if a[i] not in l:
+        l.append(a[i])
+    i+=1
+    x-=1
+print(*l,sep=',')
